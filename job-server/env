@@ -1,0 +1,15 @@
+PP_USER=root
+APP_GROUP=root
+INSTALL_DIR=/spark-jobserver
+LOG_DIR=/var/log/job-server
+PIDFILE=spark-jobserver.pid
+SPARK_HOME=/spark
+SPARK_EXECUTOR_URI=http://192.168.100.6:2486/spark-1.2.1-bin-hadoop2.4.tgz
+
+MESOS_NATIVE_LIBRARY=/libmesos-0.21.1.so
+SPARK_LOCAL_IP=192.168.100.32
+SPARK_LOCAL_HOSTNAME=192.168.100.32
+JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
+SPARK_EXECUTOR_URI=http://192.168.100.6:2486/spark-1.2.1-bin-hadoop2.4.tgz
+MASTER=mesos://zk://192.168.100.30:2181/mesos-for-omega
+MESOS_MASTER=$MASTER

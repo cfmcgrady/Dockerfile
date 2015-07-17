@@ -1,0 +1,14 @@
+curl -v -X POST http://marathon-ip:8080/v2/apps \
+         -H Content-Type:application/json -d '{
+             "id":"app",
+             "container": {
+                 "type": "DOCKER",
+                 "docker": {
+                     "image": "ubuntu:14.04"
+                 }
+             },
+             "cmd": "top -b",
+             "cpus": 0.1,
+             "mem": 16.0,
+             "instances": 1
+         }'

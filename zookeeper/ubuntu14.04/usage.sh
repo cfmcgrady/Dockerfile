@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -d --net host zookeeper
+docker run -d --restart always --net host --name zookeeper zookeeper:3.4.6
